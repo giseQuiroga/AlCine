@@ -1,0 +1,5 @@
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\Entity\bin\Debug\Entity.dll
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\Entity\bin\Debug\Entity.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\Entity\obj\Debug\Entity.dll
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\Entity\obj\Debug\Entity.pdb

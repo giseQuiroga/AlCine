@@ -1,0 +1,7 @@
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\IServices\bin\Debug\IServices.dll
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\IServices\bin\Debug\IServices.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\IServices\bin\Debug\Services.dll
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\IServices\bin\Debug\Services.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\IServices\obj\Debug\IServices.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\IServices\obj\Debug\IServices.dll
+c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\IServices\obj\Debug\IServices.pdb
