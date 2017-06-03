@@ -5,3 +5,10 @@ c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\Services\bin
 c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
 c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\Services\obj\Debug\Services.dll
 c:\users\usuario\documents\visual studio 2015\Projects\ProyectoCine\Services\obj\Debug\Services.pdb
+C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\Services\bin\Debug\Services.dll
+C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\Services\bin\Debug\Services.pdb
+C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\Services\bin\Debug\Entity.dll
+C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\Services\bin\Debug\Entity.pdb
+C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\Services\obj\Debug\Services.dll
+C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\Services\obj\Debug\Services.pdb
