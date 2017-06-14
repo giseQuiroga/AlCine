@@ -1,0 +1,11 @@
+D:\GetLocalProxy\ProyectoAlCine\Service\bin\Debug\Service.dll
+D:\GetLocalProxy\ProyectoAlCine\Service\bin\Debug\Service.pdb
+D:\GetLocalProxy\ProyectoAlCine\Service\bin\Debug\DataAccessLayer.dll
+D:\GetLocalProxy\ProyectoAlCine\Service\bin\Debug\EntityFramework.dll
+D:\GetLocalProxy\ProyectoAlCine\Service\bin\Debug\DataAccessLayer.pdb
+D:\GetLocalProxy\ProyectoAlCine\Service\bin\Debug\EntityFramework.xml
+D:\GetLocalProxy\ProyectoAlCine\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\GetLocalProxy\ProyectoAlCine\Service\obj\Debug\Service.dll
+D:\GetLocalProxy\ProyectoAlCine\Service\obj\Debug\Service.pdb
+D:\GetLocalProxy\ProyectoAlCine\Service\bin\Debug\EntityFramework.SqlServer.dll
+D:\GetLocalProxy\ProyectoAlCine\Service\bin\Debug\EntityFramework.SqlServer.xml
