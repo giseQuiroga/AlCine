@@ -7,6 +7,11 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DataAccessLayer;
+using Service.Interfaces;
+using Service.Services;
+using Service.Administrator;
+
+
 
 namespace ProyectoAlCine.Controllers
 {
@@ -14,10 +19,14 @@ namespace ProyectoAlCine.Controllers
     {
         private AlCineEntities db = new AlCineEntities();
 
+        GeneroAdmin GeneroAdmin = new GeneroAdmin( new GeneroService());
+
         // GET: Genero
         public ActionResult Index()
         {
-            return View(db.Generos.ToList());
+            var generos = GeneroAdmin.ListarGeneros();
+
+            return View(generos);
         }
 
         // GET: Genero/Details/5
@@ -27,12 +36,14 @@ namespace ProyectoAlCine.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Genero genero = db.Generos.Find(id);
-            if (genero == null)
+
+            var detalle = GeneroAdmin.ObtenerDetalle(id);
+
+            if (detalle == null)
             {
                 return HttpNotFound();
             }
-            return View(genero);
+            return View(detalle);
         }
 
         // GET: Genero/Create
@@ -65,12 +76,14 @@ namespace ProyectoAlCine.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Genero genero = db.Generos.Find(id);
-            if (genero == null)
+
+            var editar = GeneroAdmin.EditarGenero(id);
+
+            if (editar == null)
             {
                 return HttpNotFound();
             }
-            return View(genero);
+            return View(editar);
         }
 
         // POST: Genero/Edit/5
@@ -96,12 +109,14 @@ namespace ProyectoAlCine.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Genero genero = db.Generos.Find(id);
-            if (genero == null)
+
+            var borrar = GeneroAdmin.BorrarGenero(id);
+
+            if (borrar == null)
             {
                 return HttpNotFound();
             }
-            return View(genero);
+            return View(borrar);
         }
 
         // POST: Genero/Delete/5
@@ -109,8 +124,9 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Genero genero = db.Generos.Find(id);
-            db.Generos.Remove(genero);
+            var borrar = GeneroAdmin.BorrarGenero(id);
+
+            db.Generos.Remove(borrar);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -123,5 +139,6 @@ namespace ProyectoAlCine.Controllers
             }
             base.Dispose(disposing);
         }
+
     }
 }

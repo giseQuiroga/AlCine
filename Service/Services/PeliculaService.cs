@@ -19,5 +19,26 @@ namespace Service.Services
             var peliculas = db.Peliculas.Include(p => p.Calificacione).Include(p => p.Genero);            
             return peliculas.ToList() ;
         }
+
+        public Pelicula ObtenerDetalle(int? id)
+        {
+            Pelicula pelicula = db.Peliculas.Find(id);
+
+            return pelicula;
+        }
+
+        public Pelicula EditarPelicula(int? id)
+        {
+            Pelicula pelicula = db.Peliculas.Find(id);
+
+            return pelicula;
+        }
+
+        public Pelicula BorrarPelicula(int? id)
+        {
+            Pelicula pelicula = db.Peliculas.Find(id);
+
+            return pelicula;
+        }
     }
 }

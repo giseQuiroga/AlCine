@@ -7,17 +7,25 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DataAccessLayer;
+using Service.Interfaces;
+using Service.Services;
+using Service.Administrator;
+
 
 namespace ProyectoAlCine.Controllers
 {
     public class CalificacionController : Controller
     {
-        private AlCineEntities db = new AlCineEntities();
+        private AlCineEntities db = new AlCineEntities();       
+
+        CalificacionAdmin calificacionAdmin = new CalificacionAdmin(new CalificacionService());
 
         // GET: Calificacion
         public ActionResult Index()
         {
-            return View(db.Calificaciones.ToList());
+            var calificaciones = calificacionAdmin.ListarCalificaciones();
+
+            return View(calificaciones);
         }
 
         // GET: Calificacion/Details/5
@@ -27,12 +35,14 @@ namespace ProyectoAlCine.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Calificacione calificacione = db.Calificaciones.Find(id);
-            if (calificacione == null)
+
+            var detalle = calificacionAdmin.ObtenerDetalle(id);
+
+            if (detalle == null)
             {
                 return HttpNotFound();
             }
-            return View(calificacione);
+            return View(detalle);
         }
 
         // GET: Calificacion/Create
@@ -65,12 +75,14 @@ namespace ProyectoAlCine.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Calificacione calificacione = db.Calificaciones.Find(id);
-            if (calificacione == null)
+
+            var editar = calificacionAdmin.EditarCalificacion(id);
+
+            if (editar == null)
             {
                 return HttpNotFound();
             }
-            return View(calificacione);
+            return View(editar);
         }
 
         // POST: Calificacion/Edit/5
@@ -96,12 +108,14 @@ namespace ProyectoAlCine.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Calificacione calificacione = db.Calificaciones.Find(id);
-            if (calificacione == null)
+
+            var borrar = calificacionAdmin.BorrarCalificacion(id);
+
+            if (borrar == null)
             {
                 return HttpNotFound();
             }
-            return View(calificacione);
+            return View(borrar);
         }
 
         // POST: Calificacion/Delete/5
@@ -109,8 +123,9 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Calificacione calificacione = db.Calificaciones.Find(id);
-            db.Calificaciones.Remove(calificacione);
+            var borrar = calificacionAdmin.BorrarCalificacion(id);
+
+            db.Calificaciones.Remove(borrar);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

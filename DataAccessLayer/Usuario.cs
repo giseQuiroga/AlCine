@@ -11,11 +11,14 @@ namespace DataAccessLayer
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class Usuario
     {
         public int IdUsuario { get; set; }
+        [DisplayName("Nombre de Usuario")]
         public string NombreUsuario { get; set; }
+        [DisplayName("Contraseña")]
         public string Password { get; set; }
     }
 }

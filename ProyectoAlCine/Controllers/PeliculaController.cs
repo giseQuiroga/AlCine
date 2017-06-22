@@ -8,25 +8,23 @@ using System.Web;
 using System.Web.Mvc;
 using DataAccessLayer;
 using Service.Interfaces;
+using Service.Services;
+using Service.Administrator;
+
 
 namespace ProyectoAlCine.Controllers
 {
     public class PeliculaController : Controller
     {
-        private AlCineEntities db = new AlCineEntities();
-        private IPeliculaService _iPeliculaService;
+        private AlCineEntities db = new AlCineEntities();      
 
+        PeliculaAdmin peliculaAdmin = new PeliculaAdmin( new PeliculaService());
      
-       public PeliculaController(IPeliculaService iPeliculaService)
-        {
-            this._iPeliculaService = iPeliculaService;
-        }
-        // GET: Pelicula
         public ActionResult Index()
         {
-            var peliculas = this._iPeliculaService.ListarPeliculas();
-            return View(peliculas);
+            var peliculas = peliculaAdmin.ListarPeliculas();
 
+            return View(peliculas);
         }
 
         // GET: Pelicula/Details/5
@@ -36,12 +34,14 @@ namespace ProyectoAlCine.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Pelicula pelicula = db.Peliculas.Find(id);
-            if (pelicula == null)
+
+            var detalle = peliculaAdmin.ObtenerDetalle(id);
+
+            if (detalle == null)
             {
                 return HttpNotFound();
             }
-            return View(pelicula);
+            return View(detalle);
         }
 
         // GET: Pelicula/Create
@@ -78,14 +78,18 @@ namespace ProyectoAlCine.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Pelicula pelicula = db.Peliculas.Find(id);
-            if (pelicula == null)
+
+            var editar = peliculaAdmin.EditarPelicula(id);
+
+            if (editar == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.IdCalificacion = new SelectList(db.Calificaciones, "IdCalificacion", "Nombre", pelicula.IdCalificacion);
-            ViewBag.IdGenero = new SelectList(db.Generos, "IdGenero", "Nombre", pelicula.IdGenero);
-            return View(pelicula);
+
+            ViewBag.IdCalificacion = new SelectList(db.Calificaciones, "IdCalificacion", "Nombre", editar.IdCalificacion);
+
+            ViewBag.IdGenero = new SelectList(db.Generos, "IdGenero", "Nombre", editar.IdGenero);
+            return View(editar);
         }
 
         // POST: Pelicula/Edit/5
@@ -113,12 +117,14 @@ namespace ProyectoAlCine.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Pelicula pelicula = db.Peliculas.Find(id);
-            if (pelicula == null)
+
+            var borrar = peliculaAdmin.BorrarPelicula(id);
+
+            if (borrar == null)
             {
                 return HttpNotFound();
             }
-            return View(pelicula);
+            return View(borrar);
         }
 
         // POST: Pelicula/Delete/5
@@ -126,9 +132,12 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Pelicula pelicula = db.Peliculas.Find(id);
-            db.Peliculas.Remove(pelicula);
+            var borrar = peliculaAdmin.BorrarPelicula(id);
+
+            db.Peliculas.Remove(borrar);
+
             db.SaveChanges();
+
             return RedirectToAction("Index");
         }
 
