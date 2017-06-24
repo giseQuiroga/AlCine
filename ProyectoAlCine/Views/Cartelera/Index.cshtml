@@ -1,0 +1,118 @@
+﻿@model IEnumerable<DataAccessLayer.Cartelera>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HoraInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroSala)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lunes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Martes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Miercoles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Jueves)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Viernes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sabado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Domingo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaCarga)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pelicula.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sede.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Versione.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoraInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroSala)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lunes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Martes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Miercoles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jueves)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Viernes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sabado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Domingo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaCarga)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pelicula.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sede.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Versione.Nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdCartelera }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdCartelera }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdCartelera })
+        </td>
+    </tr>
+}
+
+</table>

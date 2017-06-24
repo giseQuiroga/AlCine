@@ -1,0 +1,139 @@
+﻿@model DataAccessLayer.Cartelera
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cartelera</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroSala)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroSala)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lunes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lunes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Martes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Martes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Miercoles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Miercoles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Jueves)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jueves)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Viernes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Viernes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sabado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sabado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Domingo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Domingo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCarga)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCarga)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pelicula.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pelicula.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sede.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sede.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Versione.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Versione.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdCartelera }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

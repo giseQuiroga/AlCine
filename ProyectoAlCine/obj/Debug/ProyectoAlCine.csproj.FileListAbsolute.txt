@@ -343,90 +343,175 @@ C:\Users\Tamara\Desktop\proyecto_alCine\ProyectoAlCine\bin\Microsoft.Owin.Securi
 C:\Users\Tamara\Desktop\proyecto_alCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.csprojResolveAssemblyReference.cache
 C:\Users\Tamara\Desktop\proyecto_alCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.dll
 C:\Users\Tamara\Desktop\proyecto_alCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.pdb
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\ApplicationInsights.config
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\csc.exe
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\vbc.exe
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\VBCSCompiler.exe
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\ProyectoAlCine.dll.config
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\ProyectoAlCine.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\ProyectoAlCine.pdb
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Antlr3.Runtime.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\DataAccessLayer.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\EntityFramework.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\EntityFramework.SqlServer.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.Web.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Newtonsoft.Json.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Owin.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Service.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.Helpers.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.Mvc.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.Optimization.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.Razor.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.WebPages.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Razor.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\WebGrease.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\DataAccessLayer.pdb
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\DataAccessLayer.dll.config
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Service.pdb
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.Web.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.ApplicationInsights.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.Helpers.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.Mvc.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.Optimization.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.Razor.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.WebPages.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Razor.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Antlr3.Runtime.pdb
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Newtonsoft.Json.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\EntityFramework.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\EntityFramework.SqlServer.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.csprojResolveAssemblyReference.cache
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.dll
-C:\Users\Tamara\Documents\Visual Studio 2017\Projects\AlCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.pdb
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\ApplicationInsights.config
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\csc.exe
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\vbc.exe
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\VBCSCompiler.exe
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\ProyectoAlCine.dll.config
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\ProyectoAlCine.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\ProyectoAlCine.pdb
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Antlr3.Runtime.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\DataAccessLayer.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\EntityFramework.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\EntityFramework.SqlServer.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.Web.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.ApplicationInsights.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Newtonsoft.Json.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Owin.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Service.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.Helpers.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.Mvc.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.Optimization.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.Razor.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.WebPages.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Razor.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\WebGrease.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\DataAccessLayer.pdb
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Service.pdb
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.Web.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.ApplicationInsights.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.Helpers.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.Mvc.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.Optimization.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.Razor.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.WebPages.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Razor.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Antlr3.Runtime.pdb
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Newtonsoft.Json.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\EntityFramework.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\EntityFramework.SqlServer.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.csprojResolveAssemblyReference.cache
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.dll
+C:\Users\gisela.quiroga\Documents\GitHub\AlCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.pdb
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\ApplicationInsights.config
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\csc.exe
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\vbc.exe
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\VBCSCompiler.exe
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\ProyectoAlCine.dll.config
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\ProyectoAlCine.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\ProyectoAlCine.pdb
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Antlr3.Runtime.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\DataAccessLayer.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\EntityFramework.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\EntityFramework.SqlServer.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.Web.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.ApplicationInsights.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Newtonsoft.Json.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Owin.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Service.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.Helpers.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.Mvc.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.Optimization.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.Razor.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.WebPages.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Razor.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\WebGrease.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\DataAccessLayer.pdb
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Service.pdb
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.Web.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.ApplicationInsights.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.Helpers.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.Mvc.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.Optimization.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.Razor.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.WebPages.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\System.Web.WebPages.Razor.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Antlr3.Runtime.pdb
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Newtonsoft.Json.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\EntityFramework.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\EntityFramework.SqlServer.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.csprojResolveAssemblyReference.cache
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.dll
+C:\Users\gisela.quiroga\Desktop\AlCine\ProyectoAlCine\obj\Debug\ProyectoAlCine.pdb

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Service.Administrator;
+using Service.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,9 +10,11 @@ namespace ProyectoAlCine.Controllers
 {
     public class HomeController : Controller
     {
+        PeliculaAdmin peliculaAdmin = new PeliculaAdmin(new PeliculaService());
         public ActionResult Index()
         {
-            return View();
+            var peliculas = peliculaAdmin.ListarPeliculas();
+            return View(peliculas);
         }
 
         public ActionResult About()

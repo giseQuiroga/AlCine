@@ -1,0 +1,91 @@
+﻿@model DataAccessLayer.Reserva
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reserva</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaHoraInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaHoraInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDocumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDocumento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadEntradas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadEntradas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCarga)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCarga)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pelicula.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pelicula.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sede.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sede.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TiposDocumento.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TiposDocumento.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Versione.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Versione.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdReserva }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
