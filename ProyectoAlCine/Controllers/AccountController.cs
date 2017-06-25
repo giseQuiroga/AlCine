@@ -20,6 +20,7 @@ namespace ProyectoAlCine.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
+        AlCineEntities db=new AlCineEntities();
         LoginAdmin loginAdmin = new LoginAdmin(new LoginService());
         public AccountController()
         {

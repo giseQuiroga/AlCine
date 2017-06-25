@@ -17,8 +17,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Reserva
         public ActionResult Index()
         {
-            var reservas = db.Reservas.Include(r => r.Pelicula).Include(r => r.Sede).Include(r => r.TiposDocumento).Include(r => r.Versione);
-            return View(reservas.ToList());
+            var reservas = db.Reservas.OrderByDescending(r => r.IdReserva).Include(r => r.Pelicula).Include(r => r.Sede).Include(r => r.TiposDocumento).Include(r => r.Versione).FirstOrDefault();
+            ViewBag.Mensaje = "La reserva estará vigente hasta 1hr antes de la función elegida y deberá ser confirmada en el cine seleccionado.";
+            ViewBag.DatosReserva = "Código de Reserva: " + reservas.IdReserva + " - Precio Total: " + reservas.Sede.PrecioGeneral * reservas.CantidadEntradas;
+
+            return View(reservas);
         }
 
         // GET: Reserva/Details/5
@@ -55,13 +58,13 @@ namespace ProyectoAlCine.Controllers
         {
             if (ModelState.IsValid)
             {
+                //ViewBag.Mensaje = "La reserva estará vigente hasta 1hr antes de la función elegida y deberá ser confirmada en el cine seleccionado.";
+                //ViewBag.DatosReserva = "Código de Reserva: " + reserva.IdReserva + " - Precio Total: " + reserva.Sede.PrecioGeneral * reserva.CantidadEntradas;
                 db.Reservas.Add(reserva);
                 db.SaveChanges();
-                return RedirectToAction("Index", reserva.IdReserva);
+                return RedirectToAction("Index");
             }
 
-            ViewBag.Mensaje = "La reserva estará vigente hasta 1hr antes de la función elegida y deberá ser confirmada en el cine seleccionado.";
-            ViewBag.DatosReserva="Código de Reserva: "+ reserva.IdReserva +" - Precio Total: " + reserva.Sede.PrecioGeneral * reserva.CantidadEntradas;
             ViewBag.IdPelicula = new SelectList(db.Peliculas, "IdPelicula", "Nombre", reserva.IdPelicula);
             ViewBag.IdSede = new SelectList(db.Sedes, "IdSede", "Nombre", reserva.IdSede);
             ViewBag.IdTipoDocumento = new SelectList(db.TiposDocumentos, "IdTipoDocumento", "Descripcion", reserva.IdTipoDocumento);

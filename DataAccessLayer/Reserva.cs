@@ -11,23 +11,30 @@ namespace DataAccessLayer
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class Reserva
     {
         public int IdReserva { get; set; }
         public int IdSede { get; set; }
         public int IdVersion { get; set; }
         public int IdPelicula { get; set; }
+        [DisplayName("Inicio de la Funcion")]
         public System.DateTime FechaHoraInicio { get; set; }
         public string Email { get; set; }
         public int IdTipoDocumento { get; set; }
+        [DisplayName("Numero de Documento")]
         public string NumeroDocumento { get; set; }
+        [DisplayName("Cantidad de Entradas")]
         public int CantidadEntradas { get; set; }
+        [DisplayName("Fecha de Reserva")]
         public System.DateTime FechaCarga { get; set; }
-    
+        [DisplayName("Pelicula")]
         public virtual Pelicula Pelicula { get; set; }
+        [DisplayName("Sede")]
         public virtual Sede Sede { get; set; }
         public virtual TiposDocumento TiposDocumento { get; set; }
+        [DisplayName("Version")]
         public virtual Versione Versione { get; set; }
     }
 }

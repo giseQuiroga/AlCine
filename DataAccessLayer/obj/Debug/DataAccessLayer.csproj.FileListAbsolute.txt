@@ -47,3 +47,4 @@ C:\Users\gisela.quiroga\Desktop\AlCine\DataAccessLayer\bin\Debug\EntityFramework
 C:\Users\gisela.quiroga\Desktop\AlCine\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\gisela.quiroga\Desktop\AlCine\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\gisela.quiroga\Desktop\AlCine\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\gisela.quiroga\Desktop\AlCine\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache

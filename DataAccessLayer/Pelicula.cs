@@ -11,7 +11,8 @@ namespace DataAccessLayer
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class Pelicula
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -25,9 +26,12 @@ namespace DataAccessLayer
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public string Imagen { get; set; }
+        [DisplayName("Calificación")]
         public int IdCalificacion { get; set; }
+        [DisplayName("Genero")]
         public int IdGenero { get; set; }
         public int Duracion { get; set; }
+        [DisplayName("Fecha de Carga")]
         public System.DateTime FechaCarga { get; set; }
     
         public virtual Calificacione Calificacione { get; set; }

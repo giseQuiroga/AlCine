@@ -11,16 +11,24 @@ namespace DataAccessLayer
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class Cartelera
     {
         public int IdCartelera { get; set; }
+        [DisplayName("Sede")]
         public int IdSede { get; set; }
+        [DisplayName("Pelicula")]
         public int IdPelicula { get; set; }
+        [DisplayName("Hora de Inicio")]
         public int HoraInicio { get; set; }
+        [DisplayName("Inicio de cartelera")]
         public System.DateTime FechaInicio { get; set; }
+        [DisplayName("Fin de Cartelera")]
         public System.DateTime FechaFin { get; set; }
+        [DisplayName("Numero de Sala")]
         public int NumeroSala { get; set; }
+        [DisplayName("Version")]
         public int IdVersion { get; set; }
         public bool Lunes { get; set; }
         public bool Martes { get; set; }
@@ -29,8 +37,8 @@ namespace DataAccessLayer
         public bool Viernes { get; set; }
         public bool Sabado { get; set; }
         public bool Domingo { get; set; }
+        [DisplayName("Fecha de Carga")]
         public System.DateTime FechaCarga { get; set; }
-    
         public virtual Pelicula Pelicula { get; set; }
         public virtual Sede Sede { get; set; }
         public virtual Versione Versione { get; set; }

@@ -1,5 +1,4 @@
-﻿@model IEnumerable<DataAccessLayer.Reserva>
-
+﻿@model DataAccessLayer.Reserva
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -44,41 +43,39 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.FechaHoraInicio)
+            @Html.DisplayFor(modelItem => modelItem.FechaHoraInicio)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Email)
+            @Html.DisplayFor(modelItem => modelItem.Email)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.NumeroDocumento)
+            @Html.DisplayFor(modelItem => modelItem.NumeroDocumento)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CantidadEntradas)
+            @Html.DisplayFor(modelItem => modelItem.CantidadEntradas)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.FechaCarga)
+            @Html.DisplayFor(modelItem => modelItem.FechaCarga)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Pelicula.Nombre)
+            @Html.DisplayFor(modelItem => modelItem.Pelicula.Nombre)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Sede.Nombre)
+            @Html.DisplayFor(modelItem => modelItem.Sede.Nombre)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.TiposDocumento.Descripcion)
+            @Html.DisplayFor(modelItem => modelItem.TiposDocumento.Descripcion)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Versione.Nombre)
+            @Html.DisplayFor(modelItem => modelItem.Versione.Nombre)
         </td>
-        <td>
+        @*<td>
             @Html.ActionLink("Edit", "Edit", new { id=item.IdReserva }) |
             @Html.ActionLink("Details", "Details", new { id=item.IdReserva }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.IdReserva })
-        </td>
+        </td>*@
     </tr>
-}
 
 </table>
