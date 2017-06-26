@@ -1,14 +1,14 @@
 ﻿@model DataAccessLayer.Pelicula
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Nueva Pelicula";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Create</h2>
 
-
-@using (Html.BeginForm()) 
+@*@using (Html.BeginForm("NuevaPelicula", "Administracion", FormMethod.Post, new { enctype = "multipart/form-data", @class = "login-form" }))*@
+@using (Html.BeginForm("Create","Pelicula", FormMethod.Post, new { enctype = "multipart/form-data", @class = "login-form" })) 
 {
     @Html.AntiForgeryToken()
     
@@ -33,9 +33,9 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Imagen, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.Label("Imagen")
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Imagen, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.TextBox("Imagen", null, new { @class = "form-control", type = "file" })
                 @Html.ValidationMessageFor(model => model.Imagen, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -65,23 +65,15 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.FechaCarga, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.FechaCarga, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.FechaCarga, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Crear" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Volver al Listado", "Index")
 </div>
 
 @section Scripts {

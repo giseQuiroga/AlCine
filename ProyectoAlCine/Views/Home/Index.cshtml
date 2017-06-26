@@ -5,9 +5,25 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Al Cine!</h2>
+<h2>Elegí tu Pelicula</h2>
 
-<table class="table">
+@foreach (var peli in Model)
+{
+        <!-- Listado de Peliculas -->
+    <div class="row separarDiv">
+        <div class="card">
+            <img class="card-img-top tamañoImagen" src="@peli.Imagen" alt="Card image cap">
+            <div class="card-block">
+                <h4 class="card-title">@peli.Nombre</h4>
+                <p class="card-text">@peli.Genero.Nombre</p>
+                <p class="card-text">@peli.Calificacione.Nombre</p>
+                @Html.ActionLink("Reservar", "Create", "Reserva", new { id = @peli.IdPelicula }, new { @class = "btn btn-primary" })
+            </div>
+        </div>
+    </div>
+}
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Nombre)
@@ -45,4 +61,4 @@
         </tr>
     }
 
-</table>
+</table>*@

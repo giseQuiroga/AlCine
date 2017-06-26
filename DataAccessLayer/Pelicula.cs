@@ -12,6 +12,7 @@ namespace DataAccessLayer
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
 
     public partial class Pelicula
     {
@@ -23,20 +24,35 @@ namespace DataAccessLayer
         }
     
         public int IdPelicula { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar un nombre de pelicula")]
+        [StringLength(30, MinimumLength = 5)]
         public string Nombre { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar una descripcion de pelicula")]
+        [StringLength(300, MinimumLength = 10)]
         public string Descripcion { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar una imagen de pelicula")]
         public string Imagen { get; set; }
+
         [DisplayName("Calificación")]
         public int IdCalificacion { get; set; }
+
         [DisplayName("Genero")]
         public int IdGenero { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar una duracion de pelicula")]
+        [Range(30, 90, ErrorMessage = "La duracion debe ser de máximo 90 minutos y minimo 30 minutos")]
         public int Duracion { get; set; }
+
         [DisplayName("Fecha de Carga")]
         public System.DateTime FechaCarga { get; set; }
     
         public virtual Calificacione Calificacione { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cartelera> Carteleras { get; set; }
+
         public virtual Genero Genero { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Reserva> Reservas { get; set; }

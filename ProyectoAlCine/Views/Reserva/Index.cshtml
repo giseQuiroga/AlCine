@@ -1,16 +1,25 @@
-﻿@model DataAccessLayer.Reserva
+﻿@model IEnumerable<DataAccessLayer.Reserva>
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Detalles de la Reserva</h2>
+<script type="text/javascript">
 
-<p>
-    @ViewBag.Mensaje
-    <br />
-    @ViewBag.DatosReserva
-</p>
+    var urls = {
+        buscarPeliculas: '@Url.Action("obtenerPeliculas", "Pelicula")',
+        obtenerReservas: '@Url.Action("ListarReserva", "Reserva")'
+    };
+    function getAllSkills() {
+        return @Html.Raw(Json.Encode(@ViewBag.AllSkills));
+    }
+</script>
+
+<h2>Index</h2>
+
+
+
 <table class="table">
     <tr>
         <th>
@@ -40,42 +49,39 @@
         <th>
             @Html.DisplayNameFor(model => model.Versione.Nombre)
         </th>
-        <th></th>
     </tr>
 
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => modelItem.FechaHoraInicio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => modelItem.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => modelItem.NumeroDocumento)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => modelItem.CantidadEntradas)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => modelItem.FechaCarga)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => modelItem.Pelicula.Nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => modelItem.Sede.Nombre)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => modelItem.TiposDocumento.Descripcion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => modelItem.Versione.Nombre)
-        </td>
-        @*<td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdReserva }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdReserva }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdReserva })
-        </td>*@
-    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaHoraInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroDocumento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantidadEntradas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCarga)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pelicula.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sede.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TiposDocumento.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Versione.Nombre)
+            </td>
+        </tr>
+    }
 
 </table>

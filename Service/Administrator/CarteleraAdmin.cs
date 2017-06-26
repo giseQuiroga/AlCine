@@ -17,7 +17,7 @@ namespace Service.Administrator
             this.iCarteleraService = _iCarteleraService;
         }
 
-        public List<Cartelera> ListarCalificaciones()
+        public List<Cartelera> ListarCartelera()
         {
             var result = this.iCarteleraService.ListarCartelera();
 

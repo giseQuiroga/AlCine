@@ -10,7 +10,8 @@ using DataAccessLayer;
 using Service.Interfaces;
 using Service.Services;
 using Service.Administrator;
-
+using System.IO;
+using ProyectoAlCine.Utilities;
 
 namespace ProyectoAlCine.Controllers
 {
@@ -61,6 +62,10 @@ namespace ProyectoAlCine.Controllers
         {
             if (ModelState.IsValid)
             {
+                var nombreArchivo = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + Path.GetFileName(pelicula.Imagen);
+                var path = ImagenesUtility.Guardar(Request.Files[0], nombreArchivo);
+                pelicula.Imagen = path;
+                pelicula.FechaCarga = DateTime.Now;
                 db.Peliculas.Add(pelicula);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -101,6 +106,10 @@ namespace ProyectoAlCine.Controllers
         {
             if (ModelState.IsValid)
             {
+                var nombreArchivo = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + Path.GetFileName(pelicula.Imagen);
+                var path = ImagenesUtility.Guardar(Request.Files[0], nombreArchivo);
+                pelicula.Imagen = path;
+                pelicula.FechaCarga = DateTime.Now;
                 db.Entry(pelicula).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

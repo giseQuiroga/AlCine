@@ -22,3 +22,12 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.separarDiv {
+    padding-top:20px;
+}
+
+.tamañoImagen {
+    width:210px;
+    height:300px;
+}
