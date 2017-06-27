@@ -36,9 +36,11 @@ namespace DataAccessLayer
         [Required(ErrorMessage = "Debe ingresar una imagen de pelicula")]
         public string Imagen { get; set; }
 
+        [Required(ErrorMessage = "Todos los campos deben estar completos")]
         [DisplayName("Calificación")]
         public int IdCalificacion { get; set; }
 
+        [Required(ErrorMessage = "Todos los campos deben estar completos")]
         [DisplayName("Genero")]
         public int IdGenero { get; set; }
 
@@ -46,6 +48,7 @@ namespace DataAccessLayer
         [Range(30, 90, ErrorMessage = "La duracion debe ser de máximo 90 minutos y minimo 30 minutos")]
         public int Duracion { get; set; }
 
+        [Required(ErrorMessage = "Todos los campos deben estar completos")]
         [DisplayName("Fecha de Carga")]
         public System.DateTime FechaCarga { get; set; }
     

@@ -12,6 +12,7 @@ namespace DataAccessLayer
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
 
     public partial class Sede
     {
@@ -23,8 +24,14 @@ namespace DataAccessLayer
         }
     
         public int IdSede { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar un Nombre de Sede.")]
         public string Nombre { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar una Direccion de Sede.")]
         public string Direccion { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar un Precio General de entrada.")]
         [DisplayName("Precio General")]
         public decimal PrecioGeneral { get; set; }
     

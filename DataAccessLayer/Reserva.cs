@@ -12,6 +12,8 @@ namespace DataAccessLayer
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
+
 
     public partial class Reserva
     {
@@ -21,12 +23,22 @@ namespace DataAccessLayer
         public int IdPelicula { get; set; }
         [DisplayName("Inicio de la Funcion")]
         public System.DateTime FechaHoraInicio { get; set; }
+
+        [Required (ErrorMessage="El campo 'Email' debe estar completo")]
         public string Email { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar un tipo de Documento")]
         public int IdTipoDocumento { get; set; }
+
+        [Required(ErrorMessage = "El campo 'Número de Documento' debe estar completo")]
+        [RegularExpression("[0-9]", ErrorMessage = "El campo 'Número de Documento' sólo debe contener números")]
         [DisplayName("Numero de Documento")]
         public string NumeroDocumento { get; set; }
+
+        [Required(ErrorMessage = "El campo 'Cantidad de Entrdas' debe estar completo")]
         [DisplayName("Cantidad de Entradas")]
         public int CantidadEntradas { get; set; }
+
         [DisplayName("Fecha de Reserva")]
         public System.DateTime FechaCarga { get; set; }
         [DisplayName("Pelicula")]
