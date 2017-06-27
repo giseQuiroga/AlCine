@@ -15,26 +15,46 @@ namespace ProyectoCine.Controllers
         // GET: Administracion
         public ActionResult Inicio()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
             return View();
         }
 
         public ActionResult Peliculas()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
             return View();
         }
 
         public ActionResult Cartelera()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
             return View();
         }
 
         public ActionResult Sedes()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
             return View();
         }
 
         public ActionResult Reportes()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
             return View();
         }
     }

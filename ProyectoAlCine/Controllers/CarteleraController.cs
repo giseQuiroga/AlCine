@@ -7,12 +7,14 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DataAccessLayer;
+using ProyectoAlCine.Models;
 
 namespace ProyectoAlCine.Controllers
 {
     public class CarteleraController : Controller
     {
         private AlCineEntities db = new AlCineEntities();
+        private CarteleraNegocio negocio = new CarteleraNegocio();
 
         // GET: Cartelera
         public ActionResult Index()
@@ -54,9 +56,19 @@ namespace ProyectoAlCine.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Carteleras.Add(cartelera);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                String validacion = negocio.validarCartelera(cartelera);
+
+                if (validacion != null)
+                {
+                    ModelState.AddModelError("validacion", validacion);
+                }
+
+                else
+                {
+                    db.Carteleras.Add(cartelera);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }                    
             }
 
             ViewBag.IdPelicula = new SelectList(db.Peliculas, "IdPelicula", "Nombre", cartelera.IdPelicula);
