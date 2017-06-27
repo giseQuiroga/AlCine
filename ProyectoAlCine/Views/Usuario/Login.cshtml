@@ -7,7 +7,6 @@
 <div class="row">
     <div class="col-md-8">
         <section id="loginForm">
-            <a href="/Usuario/logout">Salir</a>
             @using (Html.BeginForm("Login", "Usuario", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
             {
                 @Html.AntiForgeryToken()
