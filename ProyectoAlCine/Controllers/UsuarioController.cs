@@ -115,6 +115,64 @@ namespace ProyectoAlCine.Controllers
             return RedirectToAction("Index");
         }
 
+        // LOGIN
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Login(Usuario u)
+        {           
+                var user = db.Usuarios.Where(model => model.NombreUsuario.Equals(u.NombreUsuario) && model.Password.Equals(u.Password)).FirstOrDefault();
+
+                if (user != null)
+                {
+                    Session["Admin"] = user.NombreUsuario.ToString();
+                    return RedirectToAction("Inicio", "Administracion");
+                }
+
+                else
+                {
+                    ModelState.AddModelError("incorrecto", "El usuario o la contraseña no son correctos");
+                }
+
+            return View();
+        }
+
+        public ActionResult logout()
+        {
+            Session.Clear();
+            return RedirectToAction("Index", "Home");
+        }
+
+//REGISTRO
+
+    [HttpGet]
+        public ActionResult Registro()
+        {
+            if (Session["user"] != null)
+            {
+                RedirectToAction("Inicio", "Administracion");
+            }
+
+            return View();
+
+        }
+
+        [HttpPost]
+        public ActionResult Registro(Usuario u)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Usuarios.Add(u);
+                db.SaveChanges();
+                return RedirectToAction("Index", "Home");
+            }
+            return View();
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
