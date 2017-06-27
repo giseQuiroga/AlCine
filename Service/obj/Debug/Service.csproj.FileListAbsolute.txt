@@ -65,3 +65,14 @@ C:\Users\gisela.quiroga\Desktop\AlCine\Service\bin\Debug\EntityFramework.SqlServ
 C:\Users\gisela.quiroga\Desktop\AlCine\Service\bin\Debug\DataAccessLayer.pdb
 C:\Users\gisela.quiroga\Desktop\AlCine\Service\bin\Debug\EntityFramework.xml
 C:\Users\gisela.quiroga\Desktop\AlCine\Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\bin\Debug\Service.dll
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\bin\Debug\Service.pdb
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\bin\Debug\DataAccessLayer.dll
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\bin\Debug\EntityFramework.dll
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\bin\Debug\DataAccessLayer.pdb
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\bin\Debug\EntityFramework.xml
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\obj\Debug\Service.dll
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\Service\obj\Debug\Service.pdb

@@ -196,16 +196,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AdministracionController.cs" />
     <Compile Include="Controllers\CalificacionController.cs" />
     <Compile Include="Controllers\CarteleraController.cs" />
+    <Compile Include="Controllers\CarteleraController_backup.cs" />
     <Compile Include="Controllers\GeneroController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PeliculaController.cs" />
     <Compile Include="Controllers\ReservaController.cs" />
     <Compile Include="Controllers\SedeController.cs" />
+    <Compile Include="Controllers\TiposDocumentoController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\VersionesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -223,6 +225,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Imagenes\2017626s-cO0QU.jpg" />
+    <Content Include="Imagenes\2017626s-gRRhj.jpg" />
+    <Content Include="Imagenes\2017627s-5xoMf.jpg" />
+    <Content Include="Imagenes\2017627s-PCSJ6.jpg" />
+    <Content Include="Imagenes\2017627s-r45Bw.jpg" />
+    <Content Include="Imagenes\2017627s-uhbJb.jpg" />
+    <Content Include="Imagenes\2017627s-YCFLL.jpg" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -275,11 +284,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Administracion\Cartelera.cshtml" />
-    <Content Include="Views\Administracion\Inicio.cshtml" />
-    <Content Include="Views\Administracion\Peliculas.cshtml" />
-    <Content Include="Views\Administracion\Reportes.cshtml" />
-    <Content Include="Views\Administracion\Sedes.cshtml" />
     <Content Include="Views\Pelicula\Reservas.cshtml" />
     <Content Include="Views\Pelicula\Listado.cshtml" />
     <Content Include="Views\Calificaciones\Create.cshtml" />
@@ -307,11 +311,11 @@
     <Content Include="Views\Calificacion\Details.cshtml" />
     <Content Include="Views\Calificacion\Edit.cshtml" />
     <Content Include="Views\Calificacion\Index.cshtml" />
-    <Content Include="Views\Cartelera\Create.cshtml" />
-    <Content Include="Views\Cartelera\Delete.cshtml" />
-    <Content Include="Views\Cartelera\Details.cshtml" />
-    <Content Include="Views\Cartelera\Edit.cshtml" />
-    <Content Include="Views\Cartelera\Index.cshtml" />
+    <Content Include="Views\Cartelera_bckup\Create.cshtml" />
+    <Content Include="Views\Cartelera_bckup\Delete.cshtml" />
+    <Content Include="Views\Cartelera_bckup\Details.cshtml" />
+    <Content Include="Views\Cartelera_bckup\Edit.cshtml" />
+    <Content Include="Views\Cartelera_bckup\Index.cshtml" />
     <Content Include="Views\Reserva\Create.cshtml" />
     <Content Include="Views\Reserva\Delete.cshtml" />
     <Content Include="Views\Reserva\Details.cshtml" />
@@ -327,6 +331,21 @@
     <Content Include="Views\Usuario\Details.cshtml" />
     <Content Include="Views\Usuario\Edit.cshtml" />
     <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Cartelera\Create.cshtml" />
+    <Content Include="Views\Cartelera\Delete.cshtml" />
+    <Content Include="Views\Cartelera\Details.cshtml" />
+    <Content Include="Views\Cartelera\Edit.cshtml" />
+    <Content Include="Views\Cartelera\Index.cshtml" />
+    <Content Include="Views\TiposDocumento\Create.cshtml" />
+    <Content Include="Views\TiposDocumento\Delete.cshtml" />
+    <Content Include="Views\TiposDocumento\Details.cshtml" />
+    <Content Include="Views\TiposDocumento\Edit.cshtml" />
+    <Content Include="Views\TiposDocumento\Index.cshtml" />
+    <Content Include="Views\Versiones\Create.cshtml" />
+    <Content Include="Views\Versiones\Delete.cshtml" />
+    <Content Include="Views\Versiones\Details.cshtml" />
+    <Content Include="Views\Versiones\Edit.cshtml" />
+    <Content Include="Views\Versiones\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

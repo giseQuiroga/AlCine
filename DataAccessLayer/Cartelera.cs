@@ -12,41 +12,24 @@ namespace DataAccessLayer
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
-    using System.ComponentModel.DataAnnotations;
 
     public partial class Cartelera
     {
         public int IdCartelera { get; set; }
-
-        [Required(ErrorMessage = "Debe ingresar una Sede.")]
         [DisplayName("Sede")]
         public int IdSede { get; set; }
-
-        [Required(ErrorMessage = "Debe ingresar una Película.")]
         [DisplayName("Pelicula")]
         public int IdPelicula { get; set; }
-
-        [Required(ErrorMessage = "Debe ingresar una Hora de Inicio.")]
-        [Range(1500, int.MaxValue, ErrorMessage = "La Hora Inicial debe ser mayor a las 15:00.")]
         [DisplayName("Hora de Inicio")]
         public int HoraInicio { get; set; }
-
-        [Required(ErrorMessage = "Debe ingresar una Fecha de Inicio.")]
         [DisplayName("Inicio de cartelera")]
         public System.DateTime FechaInicio { get; set; }
-
-        [Required(ErrorMessage = "Debe ingresar una Fecha Final.")]
         [DisplayName("Fin de Cartelera")]
         public System.DateTime FechaFin { get; set; }
-
-        [Required(ErrorMessage = "Debe ingresar una Número de Sala.")]
         [DisplayName("Numero de Sala")]
         public int NumeroSala { get; set; }
-
-        [Required(ErrorMessage = "Debe indicar una Versión.")]
         [DisplayName("Version")]
         public int IdVersion { get; set; }
-
         public bool Lunes { get; set; }
         public bool Martes { get; set; }
         public bool Miercoles { get; set; }
@@ -54,7 +37,6 @@ namespace DataAccessLayer
         public bool Viernes { get; set; }
         public bool Sabado { get; set; }
         public bool Domingo { get; set; }
-
         [DisplayName("Fecha de Carga")]
         public System.DateTime FechaCarga { get; set; }
         public virtual Pelicula Pelicula { get; set; }

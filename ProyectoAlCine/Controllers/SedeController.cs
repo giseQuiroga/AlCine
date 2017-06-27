@@ -21,18 +21,12 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             return View(db.Sedes.ToList());
         }
 
         // GET: Sede/Details/5
         public ActionResult Details(int? id)
         {
-            if (Session["Admin"] == null)
-            {
-                return RedirectToAction("Login", "Usuario");
-            }
-
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -52,7 +46,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             return View();
         }
 
@@ -67,7 +60,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             if (ModelState.IsValid)
             {
                 db.Sedes.Add(sede);
@@ -85,7 +77,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -109,7 +100,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             if (ModelState.IsValid)
             {
                 db.Entry(sede).State = EntityState.Modified;
@@ -126,7 +116,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -148,7 +137,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             Sede sede = db.Sedes.Find(id);
             db.Sedes.Remove(sede);
             db.SaveChanges();

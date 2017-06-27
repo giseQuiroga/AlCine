@@ -31,3 +31,7 @@ textarea {
     width:210px;
     height:300px;
 }
+
+.tableHidde {
+    display:none;
+}

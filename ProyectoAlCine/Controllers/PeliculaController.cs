@@ -17,30 +17,40 @@ namespace ProyectoAlCine.Controllers
 {
     public class PeliculaController : Controller
     {
-        private AlCineEntities db = new AlCineEntities();      
+        private AlCineEntities db = new AlCineEntities();
 
-        PeliculaAdmin peliculaAdmin = new PeliculaAdmin( new PeliculaService());
-     
+        PeliculaAdmin peliculaAdmin = new PeliculaAdmin(new PeliculaService());
+
         public ActionResult Index()
         {
             if (Session["Admin"] == null)
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             var peliculas = peliculaAdmin.ListarPeliculas();
 
             return View(peliculas);
         }
 
+        public JsonResult obtenerPeliculas()
+        {
+            var peliculas = peliculaAdmin.ListarPeliculas();
+
+            var comboPelicula = peliculas.Select(p => new
+            {
+                ID = p.IdPelicula,
+                Name = p.Nombre
+            }).ToList();
+            return Json(comboPelicula, JsonRequestBehavior.AllowGet);
+        }
+
         // GET: Pelicula/Details/5
         public ActionResult Details(int? id)
         {
-            if (Session["Admin"] == null)
+			if (Session["Admin"] == null)
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -62,7 +72,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-            
             ViewBag.IdCalificacion = new SelectList(db.Calificaciones, "IdCalificacion", "Nombre");
             ViewBag.IdGenero = new SelectList(db.Generos, "IdGenero", "Nombre");
             return View();
@@ -79,7 +88,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             if (ModelState.IsValid)
             {
                 var nombreArchivo = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + Path.GetFileName(pelicula.Imagen);
@@ -103,7 +111,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -133,7 +140,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             if (ModelState.IsValid)
             {
                 var nombreArchivo = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + Path.GetFileName(pelicula.Imagen);
@@ -156,7 +162,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -180,7 +185,6 @@ namespace ProyectoAlCine.Controllers
             {
                 return RedirectToAction("Login", "Usuario");
             }
-
             var borrar = peliculaAdmin.BorrarPelicula(id);
 
             db.Peliculas.Remove(borrar);

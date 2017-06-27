@@ -115,7 +115,7 @@ namespace ProyectoAlCine.Controllers
             return RedirectToAction("Index");
         }
 
-        // LOGIN
+                // LOGIN
         [HttpGet]
         public ActionResult Login()
         {

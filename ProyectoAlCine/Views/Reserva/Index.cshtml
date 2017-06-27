@@ -1,40 +1,66 @@
 ﻿@model IEnumerable<DataAccessLayer.Reserva>
 
 @{
-    ViewBag.Title = "Reserva";
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/Reserva/reserva.js"></script>
 <script type="text/javascript">
 
     var urls = {
         buscarPeliculas: '@Url.Action("obtenerPeliculas", "Pelicula")',
-        obtenerReservas: '@Url.Action("ListarReserva", "Reserva")'
+        obtenerReservas: '@Url.Action("ListarReservas", "Reserva")'
     };
-    function getAllSkills() {
-        return @Html.Raw(Json.Encode(@ViewBag.AllSkills));
-    }
+
 </script>
 
 <h1>Reservas</h1>
+
 <br />
 <div class="jumbotron">
     <div class="panel panel-default">
         <div class="panel-body">
+			<form class="form-horizontal">
+				<div class="form-group col-md-4">
+					<label class="control-label col-md-4">Pelicula</label>
+					<div class="col-md-8">
+						<select class="form-control" id="cmbPelicula"></select>
+					</div>
+				</div>
+				<div class="form-group col-md-4">
+					<label class="control-label col-md-4">Fecha de Inicio</label>
+					<div class="col-md-8">
+						<input type="date" class="form-control" id="fechaInicio" />
+					</div>
+				</div>
+				<div class="form-group col-md-4">
+					<label class="control-label col-md-4">Fecha de Fin</label>
+					<div class="col-md-8">
+						<input type="date" class="form-control" id="fechaFin" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-2">
+						<button type="button" id="btnBuscar" class="btn btn-primary" onclick="buscarReservas()">Buscar</button>
+					</div>
+				</div>
+			</form>
             <table class="table table-striped table-hover">
                 <thead>
                     <tr class="info">
-                        <th>@Html.DisplayNameFor(model => model.FechaHoraInicio)</th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Email)
-                        </th>
-                        <th>@Html.DisplayNameFor(model => model.NumeroDocumento)</th>
-                        <th>@Html.DisplayNameFor(model => model.CantidadEntradas)</th>
-                        <th>@Html.DisplayNameFor(model => model.FechaCarga)</th>
-                        <th>@Html.DisplayNameFor(model => model.Pelicula.Nombre)</th>
-                        <th>@Html.DisplayNameFor(model => model.Sede.Nombre)</th>
-                        <th>@Html.DisplayNameFor(model => model.TiposDocumento.Descripcion)</th>
-                        <th>@Html.DisplayNameFor(model => model.Versione.Nombre)</th>
+							@Html.DisplayNameFor(model => model.Sede.Nombre)
+						</th>
+						<th>
+							@Html.DisplayNameFor(model => model.Versione.Nombre)
+						</th>
+						<th>
+							@Html.DisplayNameFor(model => model.Pelicula.Nombre)
+						</th>
+						<th>
+							<span>Precio</span>
+						</th>
                     </tr>
                 </thead>
 
@@ -42,15 +68,18 @@
                     @foreach (var item in Model)
                     {
                         <tr>
-                            <td>@Html.DisplayFor(modelItem => item.FechaHoraInicio)</td>
-                            <td>@Html.DisplayFor(modelItem => item.Email)</td>
-                            <td>@Html.DisplayFor(modelItem => item.NumeroDocumento) </td>
-                            <td>@Html.DisplayFor(modelItem => item.CantidadEntradas)</td>
-                            <td>@Html.DisplayFor(modelItem => item.FechaCarga)</td>
-                            <td>@Html.DisplayFor(modelItem => item.Pelicula.Nombre) </td>
-                            <td>@Html.DisplayFor(modelItem => item.Sede.Nombre)</td>
-                            <td>@Html.DisplayFor(modelItem => item.TiposDocumento.Descripcion)</td>
-                            <td>@Html.DisplayFor(modelItem => item.Versione.Nombre)</td>
+                            <td>
+								@Html.DisplayFor(modelItem => item.Sede.Nombre)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.Versione.Nombre)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.Pelicula.Nombre)
+							</td>
+							<td>
+								@Html.DisplayFor(modelItem => item.Sede.PrecioGeneral)
+							</td>
                         </tr>
                     }
                 </tbody>
@@ -61,3 +90,18 @@
 
 
 
+<table class="table" id="tablaReservas">
+    <tr>
+        
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            
+            
+        </tr>
+    }
+
+</table>

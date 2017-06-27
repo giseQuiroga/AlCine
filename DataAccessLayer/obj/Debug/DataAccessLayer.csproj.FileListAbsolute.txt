@@ -48,3 +48,13 @@ C:\Users\gisela.quiroga\Desktop\AlCine\DataAccessLayer\bin\Debug\EntityFramework
 C:\Users\gisela.quiroga\Desktop\AlCine\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\gisela.quiroga\Desktop\AlCine\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\gisela.quiroga\Desktop\AlCine\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\hernan.rosa\Desktop\TPAlCine\AlCine\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
