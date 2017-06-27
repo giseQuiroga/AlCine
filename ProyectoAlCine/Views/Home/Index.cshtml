@@ -5,60 +5,25 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Elegí tu Pelicula</h2>
+<h1>Elegí tu Pelicula</h1>
+<br />
+<div class="jumbotron">
+    <div class="row">
+        @foreach (var peli in Model)
+        {
 
-@foreach (var peli in Model)
-{
-        <!-- Listado de Peliculas -->
-    <div class="row separarDiv">
-        <div class="card">
-            <img class="card-img-top tamañoImagen" src="@peli.Imagen" alt="Card image cap">
-            <div class="card-block">
-                <h4 class="card-title">@peli.Nombre</h4>
-                <p class="card-text">@peli.Genero.Nombre</p>
-                <p class="card-text">@peli.Calificacione.Nombre</p>
-                @Html.ActionLink("Reservar", "Create", "Reserva", new { id = @peli.IdPelicula }, new { @class = "btn btn-primary" })
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="card-img-top tamañoImagen" src="@peli.Imagen" alt="Card image cap">
+                    <div class="caption">
+                        <h2><b>@peli.Nombre</b></h2>
+                        <p>@peli.Genero.Nombre</p>
+                        <p>@peli.Calificacione.Nombre</p>
+                        @Html.ActionLink("Reservar", "Create", "Reserva", new { id = @peli.IdPelicula }, new { @class = "btn btn-primary" })
+                    </div>
+                </div>
             </div>
-        </div>
+
+        }
     </div>
-}
-
-@*<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Imagen)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Calificacione.Nombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Genero.Nombre)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Imagen)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Calificacione.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genero.Nombre)
-            </td>
-            <td>
-                @Html.ActionLink("Reservar", "Create", "Reserva", new {id = item.IdPelicula }, new { @class = "btn btn-primary" })
-            </td>
-        </tr>
-    }
-
-</table>*@
+</div>
