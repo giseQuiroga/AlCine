@@ -14,7 +14,7 @@ namespace ProyectoAlCine.Controllers
     public class CarteleraController : Controller
     {
         private AlCineEntities db = new AlCineEntities();
-        private CarteleraNegocio negocio = new CarteleraNegocio();
+        ProyectoAlCine.Models.CarteleraNegocio negocio = new Models.CarteleraNegocio();
 
         // GET: Cartelera
         public ActionResult Index()
