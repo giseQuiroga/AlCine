@@ -21,12 +21,12 @@
                 @Html.ActionLink("Al Cine", "Index", "Pelicula", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Películas", "Index", "Pelicula")</li>
-                    <li>@Html.ActionLink("Carteleras", "Index", "Cartelera")</li>
-                    <li>@Html.ActionLink("Sedes", "Index", "Sede")</li>
-                    <li>@Html.ActionLink("Reservas", "Index", "Reserva")</li>
-                </ul>
+                <!--<ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Cartelera", "Cartelera", "Administracion")</li>
+                    <li>@Html.ActionLink("Peliculas", "Peliculas", "Administracion")</li>
+                    <li>@Html.ActionLink("Sedes", "Sedes", "Administracion")</li>
+                    <li>@Html.ActionLink("Reportes", "Reportes", "Administracion")</li>
+                </ul>-->
                 @Html.Partial("_LoginPartial")
             </div>
         </div>

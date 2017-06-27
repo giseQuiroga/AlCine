@@ -19,14 +19,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <img src="~/images/logo.png" alt="alcine-logo" height="50"/>
+                <img src="~/images/logo.png" alt="alcine-logo" height="50" />
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Cartelera", "Cartelera", "Administracion")</li>
-                    <li>@Html.ActionLink("Peliculas", "Peliculas", "Administracion")</li>
-                    <li>@Html.ActionLink("Sedes", "Sedes", "Administracion")</li>
-                    <li>@Html.ActionLink("Reportes", "Reportes", "Administracion")</li>
+                    <li>@Html.ActionLink("Películas", "Index", "Pelicula")</li>
+                    <li>@Html.ActionLink("Carteleras", "Index", "Cartelera")</li>
+                    <li>@Html.ActionLink("Sedes", "Index", "Sede")</li>
+                    <li>@Html.ActionLink("Reservas", "Index", "Reserva")</li>
+
+                   
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Salir", "Logout", "Usuario")</li>
+                    @*<li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+            <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>*@
                 </ul>
             </div>
         </div>
@@ -34,7 +41,7 @@
     <div class="container">
         @RenderSection("scripts", required: false)
         @RenderBody()
-        
+
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Al Cine - Todos los derechos reservados</p>
