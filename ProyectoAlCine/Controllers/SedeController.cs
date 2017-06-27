@@ -38,6 +38,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Sede/Create
         public ActionResult Create()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             return View();
         }
 
@@ -48,6 +53,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "IdSede,Nombre,Direccion,PrecioGeneral")] Sede sede)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (ModelState.IsValid)
             {
                 db.Sedes.Add(sede);
@@ -61,6 +71,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Sede/Edit/5
         public ActionResult Edit(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -80,6 +95,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "IdSede,Nombre,Direccion,PrecioGeneral")] Sede sede)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (ModelState.IsValid)
             {
                 db.Entry(sede).State = EntityState.Modified;
@@ -92,6 +112,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Sede/Delete/5
         public ActionResult Delete(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -109,6 +134,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             Sede sede = db.Sedes.Find(id);
             db.Sedes.Remove(sede);
             db.SaveChanges();

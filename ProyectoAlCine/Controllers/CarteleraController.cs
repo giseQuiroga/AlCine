@@ -14,7 +14,7 @@ namespace ProyectoAlCine.Controllers
     public class CarteleraController : Controller
     {
         private AlCineEntities db = new AlCineEntities();
-        ProyectoAlCine.Models.CarteleraNegocio negocio = new Models.CarteleraNegocio();
+        ProyectoAlCine.Models.CarteleraNegocio negocio = new Models.CarteleraNegocio(); 
 
         // GET: Cartelera
         public ActionResult Index()
@@ -41,6 +41,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Cartelera/Create
         public ActionResult Create()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             ViewBag.IdPelicula = new SelectList(db.Peliculas, "IdPelicula", "Nombre");
             ViewBag.IdSede = new SelectList(db.Sedes, "IdSede", "Nombre");
             ViewBag.IdVersion = new SelectList(db.Versiones, "IdVersion", "Nombre");
@@ -54,6 +59,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "IdCartelera,IdSede,IdPelicula,HoraInicio,FechaInicio,FechaFin,NumeroSala,IdVersion,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo,FechaCarga")] Cartelera cartelera)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (ModelState.IsValid)
             {
                 String validacion = negocio.validarCartelera(cartelera);
@@ -80,6 +90,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Cartelera/Edit/5
         public ActionResult Edit(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -102,6 +117,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "IdCartelera,IdSede,IdPelicula,HoraInicio,FechaInicio,FechaFin,NumeroSala,IdVersion,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado,Domingo,FechaCarga")] Cartelera cartelera)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (ModelState.IsValid)
             {
                 db.Entry(cartelera).State = EntityState.Modified;
@@ -117,6 +137,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Cartelera/Delete/5
         public ActionResult Delete(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -134,6 +159,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             Cartelera cartelera = db.Carteleras.Find(id);
             db.Carteleras.Remove(cartelera);
             db.SaveChanges();

@@ -34,6 +34,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Reserva/Create
         public ActionResult Create()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             ViewBag.IdPelicula = new SelectList(db.Peliculas, "IdPelicula", "Nombre");
             ViewBag.IdSede = new SelectList(db.Sedes, "IdSede", "Nombre");
             ViewBag.IdTipoDocumento = new SelectList(db.TiposDocumentos, "IdTipoDocumento", "Descripcion");
@@ -48,6 +53,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "IdReserva,IdSede,IdVersion,IdPelicula,FechaHoraInicio,Email,IdTipoDocumento,NumeroDocumento,CantidadEntradas,FechaCarga")] Reserva reserva)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (ModelState.IsValid)
             {
                 //ViewBag.Mensaje = "La reserva estará vigente hasta 1hr antes de la función elegida y deberá ser confirmada en el cine seleccionado.";
@@ -67,6 +77,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Reserva/Edit/5
         public ActionResult Edit(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -90,6 +105,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "IdReserva,IdSede,IdVersion,IdPelicula,FechaHoraInicio,Email,IdTipoDocumento,NumeroDocumento,CantidadEntradas,FechaCarga")] Reserva reserva)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (ModelState.IsValid)
             {
                 db.Entry(reserva).State = EntityState.Modified;
@@ -106,6 +126,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Reserva/Delete/5
         public ActionResult Delete(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -123,6 +148,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             Reserva reserva = db.Reservas.Find(id);
             db.Reservas.Remove(reserva);
             db.SaveChanges();

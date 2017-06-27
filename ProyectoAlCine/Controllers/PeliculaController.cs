@@ -48,6 +48,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Pelicula/Create
         public ActionResult Create()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+            
             ViewBag.IdCalificacion = new SelectList(db.Calificaciones, "IdCalificacion", "Nombre");
             ViewBag.IdGenero = new SelectList(db.Generos, "IdGenero", "Nombre");
             return View();
@@ -60,6 +65,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "IdPelicula,Nombre,Descripcion,Imagen,IdCalificacion,IdGenero,Duracion,FechaCarga")] Pelicula pelicula)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (ModelState.IsValid)
             {
                 var nombreArchivo = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + Path.GetFileName(pelicula.Imagen);
@@ -79,6 +89,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Pelicula/Edit/5
         public ActionResult Edit(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -104,6 +119,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "IdPelicula,Nombre,Descripcion,Imagen,IdCalificacion,IdGenero,Duracion,FechaCarga")] Pelicula pelicula)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (ModelState.IsValid)
             {
                 var nombreArchivo = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + Path.GetFileName(pelicula.Imagen);
@@ -122,6 +142,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Pelicula/Delete/5
         public ActionResult Delete(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -141,6 +166,11 @@ namespace ProyectoAlCine.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             var borrar = peliculaAdmin.BorrarPelicula(id);
 
             db.Peliculas.Remove(borrar);
