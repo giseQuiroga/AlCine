@@ -12,13 +12,23 @@ namespace DataAccessLayer
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.ComponentModel.DataAnnotations;
 
     public partial class Usuario
     {
         public int IdUsuario { get; set; }
         [DisplayName("Nombre de Usuario")]
+        [Required(ErrorMessage = "El campo 'Nombre de Usuario' debe estar completo")]
         public string NombreUsuario { get; set; }
+
         [DisplayName("Contraseña")]
+        [Required(ErrorMessage = "El campo 'Contraseña' debe estar completo")]
+        [MinLength(3, ErrorMessage = "La contraseña debe poseer al menos 3 caracteres")]
         public string Password { get; set; }
+
+        [DisplayName("Repetí tu contraseña")]
+        [Required(ErrorMessage = "Todos los campos deben estar completos")]
+        [Compare ("Password", ErrorMessage ="Las contraseñas no coinciden")]
+        public string Password2 { get; set; }
     }
 }
