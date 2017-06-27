@@ -19,6 +19,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Cartelera
         public ActionResult Index()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             var carteleras = db.Carteleras.Include(c => c.Pelicula).Include(c => c.Sede).Include(c => c.Versione);
             return View(carteleras.ToList());
         }
@@ -26,6 +31,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Cartelera/Details/5
         public ActionResult Details(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

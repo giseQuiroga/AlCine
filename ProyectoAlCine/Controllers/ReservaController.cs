@@ -17,6 +17,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Reserva
         public ActionResult Index()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             var reservas = db.Reservas.Include(r => r.Pelicula).Include(r => r.Sede).Include(r => r.TiposDocumento).Include(r => r.Versione);
             return View(reservas.ToList());
         }
@@ -24,6 +29,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Reserva/Details/5
         public ActionResult Details(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             var reservas = db.Reservas.OrderByDescending(r => r.IdReserva).Include(r => r.Pelicula).Include(r => r.Sede).Include(r => r.TiposDocumento).Include(r => r.Versione).FirstOrDefault();
             ViewBag.Mensaje = "La reserva estará vigente hasta 1hr antes de la función elegida y deberá ser confirmada en el cine seleccionado.";
             ViewBag.DatosReserva = "Código de Reserva: " + reservas.IdReserva + " - Precio Total: " + reservas.Sede.PrecioGeneral * reservas.CantidadEntradas;

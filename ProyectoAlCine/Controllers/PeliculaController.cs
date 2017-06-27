@@ -23,6 +23,11 @@ namespace ProyectoAlCine.Controllers
      
         public ActionResult Index()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             var peliculas = peliculaAdmin.ListarPeliculas();
 
             return View(peliculas);
@@ -31,6 +36,11 @@ namespace ProyectoAlCine.Controllers
         // GET: Pelicula/Details/5
         public ActionResult Details(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

@@ -17,12 +17,22 @@ namespace ProyectoAlCine.Controllers
         // GET: Sede
         public ActionResult Index()
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             return View(db.Sedes.ToList());
         }
 
         // GET: Sede/Details/5
         public ActionResult Details(int? id)
         {
+            if (Session["Admin"] == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
