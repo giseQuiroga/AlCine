@@ -22,7 +22,7 @@ namespace DataAccessLayer
         [DisplayName("Sede")]
         public int IdSede { get; set; }
 
-        [Required(ErrorMessage = "Debe ingresar una PelÃ­cula.")]
+        [Required(ErrorMessage = "Debe ingresar una Película.")]
         [DisplayName("Pelicula")]
         public int IdPelicula { get; set; }
 
@@ -39,11 +39,11 @@ namespace DataAccessLayer
         [DisplayName("Fin de Cartelera")]
         public System.DateTime FechaFin { get; set; }
 
-        [Required(ErrorMessage = "Debe ingresar una NÃºmero de Sala.")]
+        [Required(ErrorMessage = "Debe ingresar una Número de Sala.")]
         [DisplayName("Numero de Sala")]
         public int NumeroSala { get; set; }
 
-        [Required(ErrorMessage = "Debe indicar una VersiÃ³n.")]
+        [Required(ErrorMessage = "Debe indicar una Versión.")]
         [DisplayName("Version")]
         public int IdVersion { get; set; }
 

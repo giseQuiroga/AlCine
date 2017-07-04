@@ -18,24 +18,31 @@ namespace DataAccessLayer
     public partial class Reserva
     {
         public int IdReserva { get; set; }
+
+        [Required(ErrorMessage = "El campo 'Sede' debe estar completo")]
         public int IdSede { get; set; }
+        [Required(ErrorMessage = "El campo 'Versión' debe estar completo")]
         public int IdVersion { get; set; }
+        [Required(ErrorMessage = "El campo 'Película' debe estar completo")]
         public int IdPelicula { get; set; }
-        [DisplayName("Inicio de la Funcion")]
+        [DisplayName("Inicio de la Función")]
         public System.DateTime FechaHoraInicio { get; set; }
 
-        [Required (ErrorMessage="El campo 'Email' debe estar completo")]
+        [Required(ErrorMessage = "El campo 'Email' debe estar completo")]
+        [RegularExpression ("^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$", ErrorMessage = "El e-mail no es válido")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Debe ingresar un tipo de Documento")]
         public int IdTipoDocumento { get; set; }
 
         [Required(ErrorMessage = "El campo 'Número de Documento' debe estar completo")]
-        [RegularExpression("[0-9]", ErrorMessage = "El campo 'Número de Documento' sólo debe contener números")]
+        [RegularExpression("([1-9][0-9]*)", ErrorMessage = "El campo 'Número de Documento' sólo debe contener números")]
+        [StringLength(20, ErrorMessage = "El número de documento puede tener máximo 20 dígitos")]
         [DisplayName("Numero de Documento")]
         public string NumeroDocumento { get; set; }
 
-        [Required(ErrorMessage = "El campo 'Cantidad de Entrdas' debe estar completo")]
+        [Required(ErrorMessage = "El campo 'Cantidad de Entradas' debe estar completo")]
+        [Range (1, int.MaxValue, ErrorMessage = "Debe reservar al menos una entrada")]
         [DisplayName("Cantidad de Entradas")]
         public int CantidadEntradas { get; set; }
 
