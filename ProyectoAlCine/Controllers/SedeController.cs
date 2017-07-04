@@ -19,33 +19,25 @@ namespace ProyectoAlCine.Controllers
         {
             if (Session["Admin"] == null)
             {
+                TempData["urlController"] = Request.RequestContext.RouteData.Values["controller"].ToString();
+                TempData["urlAction"] = Request.RequestContext.RouteData.Values["action"].ToString();
                 return RedirectToAction("Login", "Usuario");
             }
+
             return View(db.Sedes.ToList());
         }
 
-        // GET: Sede/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Sede sede = db.Sedes.Find(id);
-            if (sede == null)
-            {
-                return HttpNotFound();
-            }
-            return View(sede);
-        }
-
+       
         // GET: Sede/Create
         public ActionResult Create()
         {
             if (Session["Admin"] == null)
             {
+                TempData["urlController"] = Request.RequestContext.RouteData.Values["controller"].ToString();
+                TempData["urlAction"] = Request.RequestContext.RouteData.Values["action"].ToString();
                 return RedirectToAction("Login", "Usuario");
             }
+
             return View();
         }
 
@@ -58,8 +50,11 @@ namespace ProyectoAlCine.Controllers
         {
             if (Session["Admin"] == null)
             {
+                TempData["urlController"] = Request.RequestContext.RouteData.Values["controller"].ToString();
+                TempData["urlAction"] = Request.RequestContext.RouteData.Values["action"].ToString();
                 return RedirectToAction("Login", "Usuario");
             }
+
             if (ModelState.IsValid)
             {
                 db.Sedes.Add(sede);
@@ -75,8 +70,11 @@ namespace ProyectoAlCine.Controllers
         {
             if (Session["Admin"] == null)
             {
+                TempData["urlController"] = Request.RequestContext.RouteData.Values["controller"].ToString();
+                TempData["urlAction"] = Request.RequestContext.RouteData.Values["action"].ToString();
                 return RedirectToAction("Login", "Usuario");
             }
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -98,8 +96,11 @@ namespace ProyectoAlCine.Controllers
         {
             if (Session["Admin"] == null)
             {
+                TempData["urlController"] = Request.RequestContext.RouteData.Values["controller"].ToString();
+                TempData["urlAction"] = Request.RequestContext.RouteData.Values["action"].ToString();
                 return RedirectToAction("Login", "Usuario");
             }
+
             if (ModelState.IsValid)
             {
                 db.Entry(sede).State = EntityState.Modified;
@@ -109,40 +110,7 @@ namespace ProyectoAlCine.Controllers
             return View(sede);
         }
 
-        // GET: Sede/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (Session["Admin"] == null)
-            {
-                return RedirectToAction("Login", "Usuario");
-            }
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Sede sede = db.Sedes.Find(id);
-            if (sede == null)
-            {
-                return HttpNotFound();
-            }
-            return View(sede);
-        }
-
-        // POST: Sede/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            if (Session["Admin"] == null)
-            {
-                return RedirectToAction("Login", "Usuario");
-            }
-            Sede sede = db.Sedes.Find(id);
-            db.Sedes.Remove(sede);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)
