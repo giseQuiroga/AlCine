@@ -16,8 +16,10 @@ namespace Service.Services
 
         public List<Pelicula> ListarPeliculas()
         {
-            var peliculas = db.Peliculas.Include(p => p.Calificacione).Include(p => p.Genero);            
-            return peliculas.ToList() ;
+            var fechaActual = DateTime.Today;
+            var unMes = DateTime.Today.AddDays(30);
+            var peliculas = db.Carteleras.Where(x => DateTime.Today >= x.FechaInicio && DateTime.Today <= x.FechaFin && unMes >= x.FechaInicio).Select(y => y.Pelicula).ToList();
+            return peliculas.ToList();
         }
 
         public Pelicula ObtenerDetalle(int? id)

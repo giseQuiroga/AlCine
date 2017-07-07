@@ -1,0 +1,23 @@
+﻿@model IEnumerable<DataAccessLayer.Pelicula>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h1>Elegí tu Pelicula</h1>
+<br />
+<div class="jumbotron">
+    <div class="row">
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                
+                <div class="caption">
+                    <h2><b>Se ha producido un error - por favor intente en otro momento.</b></h2>
+                    
+                    @Html.ActionLink("Reservar", "Create", "Reserva", new {  }, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

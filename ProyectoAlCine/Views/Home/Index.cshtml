@@ -1,10 +1,8 @@
 ﻿@model IEnumerable<DataAccessLayer.Pelicula>
-
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <h1>Elegí tu Pelicula</h1>
 <br />
 <div class="jumbotron">
@@ -19,7 +17,7 @@
                         <h2><b>@peli.Nombre</b></h2>
                         <p>@peli.Genero.Nombre</p>
                         <p>@peli.Calificacione.Nombre</p>
-                        @Html.ActionLink("Reservar", "Create", "Reserva", new { id = @peli.IdPelicula }, new { @class = "btn btn-primary" })
+                        @Html.ActionLink("Reservar", "Create", "Reserva", new { idPelicula = @peli.IdPelicula }, new { @class = "btn btn-primary" })
                     </div>
                 </div>
             </div>
