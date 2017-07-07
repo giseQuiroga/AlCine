@@ -196,9 +196,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdministracionController.cs" />
     <Compile Include="Controllers\CalificacionController.cs" />
     <Compile Include="Controllers\CarteleraController.cs" />
-    <Compile Include="Controllers\CarteleraController_backup.cs" />
     <Compile Include="Controllers\GeneroController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -212,10 +212,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CarteleraNegocio.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Utilities\DiasSemana.cs" />
+    <Compile Include="Utilities\Helper.cs" />
     <Compile Include="Utilities\ImagenesUtility.cs" />
     <Compile Include="Utilities\StringUtilitiy.cs" />
   </ItemGroup>
@@ -346,6 +349,7 @@
     <Content Include="Views\Versiones\Details.cshtml" />
     <Content Include="Views\Versiones\Edit.cshtml" />
     <Content Include="Views\Versiones\Index.cshtml" />
+    <Content Include="Views\Error\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
